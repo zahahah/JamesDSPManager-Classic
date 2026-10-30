@@ -1,4 +1,17 @@
-# JamesDSP Manager
+# JamesDSP Manager Classic
+
+## Preserving JamesDSP 6.6
+
+I'm Lightning Zahah (@zahahah). I'm keeping this repository as the classic
+JamesDSP module, before the LightningDSP rebrand. The preserved stable release is
+**JamesDSP 6.6**, paired with **JamesDSP root app 1.6.17** in
+[RootJamesDSP-Classic](https://github.com/zahahah/RootJamesDSP-Classic).
+The `v6.6` tag keeps the original release code, and its downloads are unchanged.
+
+My ongoing development continues in [LightningDSP](https://github.com/zahahah/LightningDSP)
+and [LightningDSP-App](https://github.com/zahahah/LightningDSP-App), where I'm
+building LightningDSP into an **Audio pocket knife**. This Classic repository
+preserves the JamesDSP release; it is not the rebranded app or module.
 
 **Your music, with a little more say in how it sounds.**
 
@@ -21,7 +34,7 @@ compatibility with every firmware or validate every later driver revision on
 both devices. The exact native source, artifacts and host checks are recorded
 in the release; further HIDL/Samsung device coverage is still welcome.
 
-[Download the module and APK](https://github.com/zahahah/JamesDSPManager/releases/tag/v6.6) · [App source](https://github.com/zahahah/RootJamesDSP) · [Native library source (currently private)](https://github.com/zahahah/LibLightningDSP-OSS)
+[Download the module and APK](https://github.com/zahahah/JamesDSPManager-Classic/releases/tag/v6.6) · [Classic app source](https://github.com/zahahah/RootJamesDSP-Classic) · [Native library source](https://github.com/zahahah/LibLightningDSP-OSS)
 
 ## What can it do?
 
@@ -81,7 +94,7 @@ The common late-load path mounts first, then uses a validated firmware stop/star
 
 ## Installation
 
-1. Download the module ZIP from [Releases](https://github.com/zahahah/JamesDSPManager/releases).
+1. Download the module ZIP from [Releases](https://github.com/zahahah/JamesDSPManager-Classic/releases).
 2. Install it through your compatible root manager. For normal-boot root, follow its reboot procedure. For temp-root/late-load, use its activation flow; do not assume reboot preserves root.
 3. Open JamesDSP and **grant it root access**. After late-load activation, allow at least 30 seconds and reopen the app if its initial check ran too early.
 4. Enable processing, play some music and try an obvious EQ adjustment at a comfortable volume.
@@ -133,7 +146,7 @@ python3 tools/package_native_control_v6.py
 
 The packager verifies native hashes, provenance, APK package/version and the authorized signing certificate before producing the ZIP in `dist/`. The v6 packager accepts `master`, `pixel-test-new-aidl`, `samsung-test-new-aidl` and `reverb-ring-index-optimization`, requiring the exact distribution version and independently verified native import. Historical v4/v5 tooling remains separate. GitHub Actions verifies and packages; it does not install the module or publish a release.
 
-Native development belongs in [LibLightningDSP-OSS](https://github.com/zahahah/LibLightningDSP-OSS). That repository is currently private, but I plan to make it public in the future. App development belongs in [RootJamesDSP](https://github.com/zahahah/RootJamesDSP). For historical release notes, see [changelog.md](changelog.md).
+Current native development belongs in [LibLightningDSP-OSS](https://github.com/zahahah/LibLightningDSP-OSS). Current app development belongs in [LightningDSP-App](https://github.com/zahahah/LightningDSP-App); the matching classic app is preserved in [RootJamesDSP-Classic](https://github.com/zahahah/RootJamesDSP-Classic). For historical release notes, see [changelog.md](changelog.md).
 
 ## Credits and licensing
 
